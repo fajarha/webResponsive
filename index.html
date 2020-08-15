@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submisson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p>Websiteku</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#article">Article</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="flex-column" id="about">
+                <p class="about card">Selamat Datang Di Website Pertama Ku. Website ini dibangun dengan Html, Css dan
+                    JavaScript.</p>
+            </article>
+
+            <article class="flex-row" id="article">
+                <section class="row1">
+                    <aside class="artikel1 card">
+                        <h1 class="text" id="html">HTML</h1>
+                        <img src="asset/html.png" alt="logo Html" class="featured-image">
+                        <p class="text" id="pHtml">Mari kita mulai dari definisi dasarnya. HTML sendiri merupakan
+                            singkatan dari
+                            Hypertext Markup Language, suatu bahasa yang memungkinkan penggunanya untuk membuat serta
+                            menyusun paragraph, link, heading, maupun tautan dan blockquote pada sebuah halaman aplikasi
+                            dan web.Fungsi dari HTML ini adalah untuk menampilkan informasi berupa teks, suara, video,
+                            gambar,
+                            dan lainnya.</p>
+                        <button onClick="htmlText(this)" class="selanjutnya">Selanjutnya</button>
+                    </aside>
+
+                    <aside class="artikel2 card">
+                        <h1 class="text" id="css">CSS</h1>
+                        <img src="asset/css1.JPG" alt="Logo Css" class="featured-image">
+                        <p class="text" id="pCss">CSS ialah salah satu bahasa pemrograman yang memungkinkan Anda untuk
+                            mengatur
+                            tampilan website Anda sesuai dengan yang dikehendaki. Bila Anda menguasainya, Anda bisa
+                            mengedit tampilan website Anda sesuai yang Anda inginkan. Itulah kenapa para blogger atau
+                            siapa saja yang memiliki website harus tahu dasar – dasar bahasa pemrograman.Cascading Style
+                            Sheets. </p>
+                        <button onClick="cssText(this)" class="selanjutnya">Selanjutnya</button>
+                    </aside>
+
+                    <aside class="artikel3 card">
+                        <h1 class="text" id="javascript">JS</h1>
+                        <img src="asset/js.PNG" alt="Logo JavaScript" class="featured-image">
+                        <p class="text" id="pJs">JavaScript adalah salah satu bahasa pemrograman yang sering
+                            digunakan oleh website programmer atau website developer.Bagi Anda yang sudah memasuki dunia
+                            pemrograman dan pengkodingan pasti mudah memahaminya, berbeda dengan orang awam.jadi
+                            javascript merupakan salah satu bahasa pemrograman web yang bisa membuat halaman website
+                            anda lebih menarik serta lebih hidup. itulah JS </p>
+                        <button onClick="jsText(this)" class="selanjutnya">Selanjutnya</button>
+                    </aside>
+                </section>
+
+                <section class="row2" id="profile">
+                    <aside class="profile card">
+                        <img class="foto" src="asset/fajar1.png" alt="gambar Fajar">
+                        <h1>My Profile</h1>
+                        <ul class="list">
+                            <li>Fajar Hafidzi</li>
+                            <li>21 Tahun</li>
+                            <li>Laki-Laki</li>
+                            <li>Cita-Cita : FullStack Developer</li>
+                        </ul>
+                    </aside>
+
+                    <aside class="contact card">
+                        <p>Contact Us</p>
+                        <input type="text" placeholder="Nama Anda" class="form" />
+                        <input type="email" placeholder="E-mail Anda" class="form" />
+                        <textarea name="" id="" placeholder="Pesan Anda" class="form-area"></textarea>
+                        <button type="button" class="tombol">Submit</button>
+                    </aside>
+                </section>
+
+            </article>
+        </main>
+
+        <footer>
+            <p>Fajar Hafidzi &copy; 2020</p>
+        </footer>
+    </div>
+
+    <script src="contoh.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    clear: both;
+    content: '';
+}
+
+header{
+    position: sticky;
+    top:0px;
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(253, 15, 15);
+    box-sizing: border-box;
+}
+
+header p{
+    color: white;
+    font-size: 24px;
+    float: left;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+nav{
+    float: right;    
+    padding: 5px 100px;
+    text-transform: uppercase;
+}
+
+nav > ul> li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+nav > ul >li>a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+nav > ul > li > a:hover{
+    color: rgb(36, 117, 248);
+}
+
+main{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 100px;
+    box-sizing: border-box;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+.about{
+    border: 1px solid  rgb(253, 15, 15);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+    background-color:  rgb(253, 15, 15);
+    color: white;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.row1{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.artikel1{
+    flex-basis: 33%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.artikel2{
+    flex-basis: 33%;
+    padding: 10px;
+
+   margin: 10px;
+}
+
+.artikel3{
+    flex-basis: 33%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text{
+    text-align: justify;
+    margin: 10px;
+}
+
+.row2{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile{
+    margin: 10px;
+    flex-basis: 75%;
+}
+
+.profile h1{
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.contact{
+    margin: 10px;
+    flex-basis: 25%;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+
+
+.foto{
+    margin-top: 10px;
+    border-radius: 200px;
+    margin-left:10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(26, 26, 184);
+    background-color: rgb(26, 26, 184);
+    float: left;
+}
+
+.list{
+    float: right;
+    margin-right: 240px;
+    margin-top: 5px;
+}
+
+.form{
+    width: 90%;
+    border: 1px solid black;
+    padding: 3px;
+    margin-top: 15px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.form-area{
+    width: 90%;
+    border: 1px solid black;
+    padding: 3px;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.tombol{
+    border: 1px solid blue;
+    color: white;
+    margin-left: 5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 90%;
+    height: 30px;
+    background-color: blue;
+}
+
+.tombol:hover{
+    background-color: rgb(52, 157, 232);
+    border: 1px solid rgb(52, 157, 232);
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+footer{
+    background-color: rgb(34, 32, 32);
+    color: white;
+    font-size: 16px;
+    padding:20px 20px;
+    text-align: center;
+}
+
+.selanjutnya{
+    border: 1px solid blue;
+    color: white;
+    margin-left: 5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 90%;
+    height: 30px;
+    background-color: blue;
+}
+
+.selanjutnya:hover{
+    background-color: rgb(52, 157, 232);
+    border: 1px solid rgb(52, 157, 232);
+}
+
+@media only screen and (max-width: 600px) {
+    
+    header{
+        position: sticky;
+        top:0px;
+    }
+
+    header p{
+        padding-left: 140px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    nav{
+        font-size: 14px;
+        padding-left:20px;
+    }
+
+    main{
+        margin-left:10px;
+    }
+
+    .row1{
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .row2{
+        flex-direction: column;
+    }
+    
+    .profile{
+        margin: 10px;
+        flex-basis: 75%;
+    }
+    
+    .profile h1{
+        margin-left: 0px;
+        padding: 20px;
+    }
+
+    .list{
+        margin-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .contact{
+        padding-bottom: 20px;
+    }
+}
